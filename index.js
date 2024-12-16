@@ -96,7 +96,7 @@ const init = async() =>{
     INSERT INTO flavors(name) VALUES('coffee-caramel');
     `;
     await client.query(SQL);
-    console.log('Data seed');
+    console.log('Data seeded');
 
     const port = process.env.PORT;
     app.listen(port, ()=>console.log(`Listening on port ${port}`));
